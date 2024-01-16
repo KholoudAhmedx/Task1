@@ -1,6 +1,9 @@
+## Task Description 
+Implement Perceptron and Adaline Algorithm to classify a stream of input data to one of a set of predefined classes.
+
 ## Dataset Description (Dry Beans)
 The dataset consists of 50 samples from each of the three categories of Dry beans(Bomay, Cali, and Sira).
-The dataset has 5 features were measured from each sample:
+The dataset has 5 features were measured from each sample (in millimeter):
     <li>Area </li>
     <li> Perimeter </li>
     <li> MajorAxisLength </li>
