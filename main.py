@@ -49,8 +49,11 @@ def Preprocessing():
         #print(class_data_Y)
 
         # Splitting data randomly 30 samples > train & 20 samples -> test
-        train_data_X, train_data_Y, test_data_X, test_data_Y = train_test_split(class_data_X, class_data_Y, test_size=20)
+        train_data_X, test_data_X, train_data_Y,test_data_Y = train_test_split(class_data_X, class_data_Y, train_size=30)
 
+        # print('test data x:', test_data_X)
+        # print('\n-------------------\n')
+        # print('test data y', test_data_Y)
 
         # Append train data of each class to the train_X & same for test
         X_train.append(train_data_X)
@@ -73,7 +76,7 @@ def Preprocessing():
 
 x_train, y_train, x_test, y_test = Preprocessing()
 print('\nXtrain\n',x_train, '\nYtrain\n', y_train, '\nXtest\n', x_test, '\nYtest\n', y_test)
-
+#print(len(x_train), len(y_train), len(x_test), len(y_test))
 
 def Perceptron():
     return 0
